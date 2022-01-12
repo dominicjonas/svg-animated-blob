@@ -12,7 +12,133 @@
   </head>
   <body>
     <section>
-      <div class="blob"></div>
+      <div class="blob">
+        <!--* To generate blob go to blob.app
+            - copy source code of generated blob 
+            - within path, cut from after 'id' to before 'fill'
+            - within path, add <animate> tag
+            - attributeName="d"
+            - dur="10000ms"
+            - repeatCount="indefinite"
+            - values="the path number sequence that was cut from the source code"
+            - separate with a semi-colon and past another path number sequence from another generated blob
+            - add as many path number sequences as you want
+            - copy first path value and paste as last to create a repeating loop
+        -->
+        <!--* To add glow effects
+            - duplicate .blob div
+            - in css file:
+            .blob:nth-child(2) {
+             filter: blur(50px);
+            }
+         -->
+        <svg
+          viewBox="0 0 500 500"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="100%"
+          id="blobSvg"
+        >
+          <defs>
+            <linearGradient
+              id="gradient"
+              x1="0%"
+              y1="0%"
+              x2="0%"
+              y2="100%"
+            >
+              <stop
+                offset="0%"
+                style="stop-color: rgb(254, 0, 242)"
+              ></stop>
+              <stop
+                offset="100%"
+                style="stop-color: rgb(251, 2, 128)"
+              ></stop>
+            </linearGradient>
+          </defs>
+          <path fill="url(#gradient)">
+            <animate
+              attributeName="d"
+              dur="10000ms"
+              repeatCount="indefinite"
+              values="M447.5,307.5Q409,365,366.5,421.5Q324,478,258.5,451Q193,424,148.5,390Q104,356,57.5,303Q11,250,44.5,187.5Q78,125,129.5,81Q181,37,247.5,44.5Q314,52,367.5,89Q421,126,453.5,188Q486,250,447.5,307.5Z; 
+              
+              M412.5,304Q399,358,357.5,405Q316,452,251,450Q186,448,143,403.5Q100,359,59,304.5Q18,250,43.5,184.5Q69,119,132,100.5Q195,82,259.5,51.5Q324,21,371.5,74Q419,127,422.5,188.5Q426,250,412.5,304Z;
+
+              M444,319Q439,388,382.5,435.5Q326,483,261,450Q196,417,129.5,401.5Q63,386,61,318Q59,250,56,178.5Q53,107,113,60.5Q173,14,250,13Q327,12,383,62.5Q439,113,444,181.5Q449,250,444,319Z;
+
+              M464.5,316Q432,382,374.5,419Q317,456,250,456.5Q183,457,140.5,408.5Q98,360,55.5,305Q13,250,54.5,194Q96,138,144,104.5Q192,71,249,74.5Q306,78,372,95.5Q438,113,467.5,181.5Q497,250,464.5,316Z;
+
+              M441,318.5Q438,387,378.5,424.5Q319,462,257,440.5Q195,419,146.5,390Q98,361,81,305.5Q64,250,66,184Q68,118,121.5,69.5Q175,21,250.5,19Q326,17,384,63.5Q442,110,443,180Q444,250,441,318.5Z;
+
+              M447.5,307.5Q409,365,366.5,421.5Q324,478,258.5,451Q193,424,148.5,390Q104,356,57.5,303Q11,250,44.5,187.5Q78,125,129.5,81Q181,37,247.5,44.5Q314,52,367.5,89Q421,126,453.5,188Q486,250,447.5,307.5Z; 
+              "
+            ></animate>
+          </path>
+        </svg>
+      </div>
+      <div class="blob">
+        <!-- To generate blob go to blob.app 
+            - copy source code of generated blob 
+            - within path, cut from after 'id' to before 'fill'
+            - within path, add <animate> tag
+            - attributeName="d"
+            - dur="10000ms"
+            - repeatCount="indefinite"
+            - values="the path number sequence that was cut from the source code"
+            - separate with a semi-colon and past another path number sequence from another generated blob
+            - add as many path number sequences as you want
+            - copy first path value and paste as last to create a repeating loop
+
+        
+        -->
+        <svg
+          viewBox="0 0 500 500"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="100%"
+          id="blobSvg"
+        >
+          <defs>
+            <linearGradient
+              id="gradient"
+              x1="0%"
+              y1="0%"
+              x2="0%"
+              y2="100%"
+            >
+              <stop
+                offset="0%"
+                style="stop-color: rgb(254, 0, 242)"
+              ></stop>
+              <stop
+                offset="100%"
+                style="stop-color: rgb(251, 2, 128)"
+              ></stop>
+            </linearGradient>
+          </defs>
+          <path fill="url(#gradient)">
+            <animate
+              attributeName="d"
+              dur="10000ms"
+              repeatCount="indefinite"
+              values="M447.5,307.5Q409,365,366.5,421.5Q324,478,258.5,451Q193,424,148.5,390Q104,356,57.5,303Q11,250,44.5,187.5Q78,125,129.5,81Q181,37,247.5,44.5Q314,52,367.5,89Q421,126,453.5,188Q486,250,447.5,307.5Z; 
+              
+              M412.5,304Q399,358,357.5,405Q316,452,251,450Q186,448,143,403.5Q100,359,59,304.5Q18,250,43.5,184.5Q69,119,132,100.5Q195,82,259.5,51.5Q324,21,371.5,74Q419,127,422.5,188.5Q426,250,412.5,304Z;
+
+              M444,319Q439,388,382.5,435.5Q326,483,261,450Q196,417,129.5,401.5Q63,386,61,318Q59,250,56,178.5Q53,107,113,60.5Q173,14,250,13Q327,12,383,62.5Q439,113,444,181.5Q449,250,444,319Z;
+
+              M464.5,316Q432,382,374.5,419Q317,456,250,456.5Q183,457,140.5,408.5Q98,360,55.5,305Q13,250,54.5,194Q96,138,144,104.5Q192,71,249,74.5Q306,78,372,95.5Q438,113,467.5,181.5Q497,250,464.5,316Z;
+
+              M441,318.5Q438,387,378.5,424.5Q319,462,257,440.5Q195,419,146.5,390Q98,361,81,305.5Q64,250,66,184Q68,118,121.5,69.5Q175,21,250.5,19Q326,17,384,63.5Q442,110,443,180Q444,250,441,318.5Z;
+
+              M447.5,307.5Q409,365,366.5,421.5Q324,478,258.5,451Q193,424,148.5,390Q104,356,57.5,303Q11,250,44.5,187.5Q78,125,129.5,81Q181,37,247.5,44.5Q314,52,367.5,89Q421,126,453.5,188Q486,250,447.5,307.5Z; 
+              "
+            ></animate>
+          </path>
+        </svg>
+      </div>
     </section>
   </body>
 </html>
